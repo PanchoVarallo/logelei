@@ -1,8 +1,28 @@
 import networkx as nx
 
+from logelei.year2019number41 import DistanceInBetween, Order
+from logelei.year2019number41.__Rule import _Rule
+
 
 class Validator:
     def __init__(self, list_of_list_of_rules):
+        """
+        Constructor.
+
+        Parameters
+        ----------
+        list_of_list_of_rules : list of (list of _Rule)
+
+        Examples
+        --------
+        Examples should be written in doctest format, and should illustrate how
+        to use the function.
+
+        >>>
+        >>>
+        >>> Validator([[DistanceInBetween(True, frank, anna, 0, Order.ORDERED)]])
+
+        """
         self.__list_of_list_of_rules = list_of_list_of_rules
 
     def validate_and_reduce(self, graph):

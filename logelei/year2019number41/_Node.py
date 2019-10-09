@@ -1,15 +1,16 @@
-class _Node:
-    """ A node of the graph."""
+from logelei.year2019number41 import Person
 
-    def __init__(self, person, seat, number):
+
+class _Node:
+    def __init__(self, person: Person, seat: int, number: int):
         """
-        Blub
+        Constructor.
 
         Parameters
         ----------
-        person
-        seat
-        number
+        person : Person
+        seat : int
+        number : int
         """
         self.person = person
         self.seat = seat
