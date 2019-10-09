@@ -1,5 +1,5 @@
-from Logelei.year2019number41.Order import Order
-from Logelei.year2019number41.__SingleRule import __SingleRule
+from logelei.year2019number41.Order import Order
+from logelei.year2019number41.__SingleRule import __SingleRule
 
 
 class DistanceInBetween(__SingleRule):

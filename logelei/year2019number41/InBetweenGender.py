@@ -1,4 +1,4 @@
-from Logelei.year2019number41.__SingleRule import __SingleRule
+from logelei.year2019number41.__SingleRule import __SingleRule
 
 
 class InBetweenGender(__SingleRule):

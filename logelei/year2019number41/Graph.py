@@ -1,7 +1,7 @@
 import copy
 import networkx as nx
 
-from Logelei.year2019number41._Node import _Node
+from logelei.year2019number41._Node import _Node
 
 
 class Graph:

@@ -1,9 +1,9 @@
 from unittest import TestCase
 
-import Logelei.year2019number41 as logelei
+import logelei.year2019number41 as logelei
 
-class Logelei(TestCase):
-    def test_logelei_from_year_2019_number_41(self):
+class TestTask(TestCase):
+    def testTask(self):
         graph = logelei.Graph([logelei.Person("Jolanda", logelei.Gender.FEMININE),
                                logelei.Person("Anna", logelei.Gender.FEMININE),
                                logelei.Person("Frank", logelei.Gender.MASCULINE),
@@ -38,3 +38,4 @@ class Logelei(TestCase):
             assert path[6].person.name == "Sabine"
             assert path[7].person.name == "Thomas"
             assert path[8].person.name == "Jolanda"
+        print("\n" + str(final_path))
