@@ -1,4 +1,5 @@
 # logelei
+[![Build Status](https://travis-ci.org/PanchoVarallo/logelei.svg?branch=master)](https://travis-ci.org/PanchoVarallo/logelei)
 
 The package `logelei` contains algorithms to solve tasks from https://www.zeit.de/autoren/Z/Zweistein.
 
