@@ -4,21 +4,7 @@ The package `logelei` contains algorithms to solve tasks from https://www.zeit.d
 
 ### Year 2019, Number 41
 ##### The task
-Jolanda muss für ihre Feier anhand der Wünsche der Gäste die Sitzordnung an ihrem achteckigen Tisch festlegen.
-
-Anna: "Frank hat so spitze Ellenbogen, der soll nicht neben mir sitzen."
-
-Frank: "Wenn Tina und Torsten nebeneinandersitzen, dann lachen die zu laut."
-
-Sabine: "Da ich schon lange Single bin, möchte ich neben zwei Männern sitzen."
-
-Thomas: "Ich möchte mal wieder neben dir, Jolanda, sitzen."
-
-Tina: "Ich möchte links von mir Frank sitzen haben, dann kann ich dessen Ohrring gebührend bewundern, oder rechts von mir Lena, die hat so ein tolles Tattoo auf ihrem linken Arm."
-
-Torsten: "Ich möchte mit Tina reden können. Tina soll also neben mir sitzen, oder zumindest soll nur eine Person zwischen uns sitzen."
-
-Lena: "Damit ich Annas Parfum nicht riechen muss, sollen mindestens zwei Personen zwischen uns sitzen."
+https://www.zeit.de/2019/41/spiele-logelei-41
 
 ##### The model
 We build up a graph that encodes all possible combinations and discard wrong combinations.
