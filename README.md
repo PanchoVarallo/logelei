@@ -10,8 +10,5 @@ https://www.zeit.de/2019/41/spiele-logelei-41
 We build up a graph that encodes all possible combinations and discard wrong combinations.
 
 ##### The solution
-See `test_Year2019number41.py`.
-
-`========================== 1 passed in 1.21 seconds ===========================.`
-
+See `test_Year2019number41.py`:
 `[[Jolanda, Lena, Frank, Tina, Anna, Torsten, Sabine, Thomas, Jolanda]]`
