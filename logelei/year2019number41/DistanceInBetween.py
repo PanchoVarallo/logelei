@@ -23,7 +23,7 @@ class DistanceInBetween(_Rule):
 
         Examples
         --------
-        After defining two persons, we define that frank has to sit directly to the left of anna.
+        After defining persons, we define that frank has to sit directly to the left of anna.
 
         >>> anna = Person("Anna", Gender.FEMININE)
         >>> frank = Person("Frank", Gender.MASCULINE)
