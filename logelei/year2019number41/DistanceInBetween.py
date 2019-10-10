@@ -13,7 +13,7 @@ class DistanceInBetween(_Rule):
         Parameters
         ----------
         allowed : bool
-            if true, this rule ensures the defined order, otherwise it prohibits it
+            if true, this rule ensured that the rule is fulfilled, otherwise it ensures that the rule is not filfilled 
         left_person : Person
         right_person : Person
         in_between : int
