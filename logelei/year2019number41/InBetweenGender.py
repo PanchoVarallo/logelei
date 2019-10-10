@@ -10,7 +10,7 @@ class InBetweenGender(_Rule):
         Parameters
         ----------
         allowed : bool
-            if true, this rule ensures the defined order, otherwise it prohibits it
+            if true, this rule ensured that the rule is fulfilled, otherwise it ensures that the rule is not filfilled 
         person  : Person
         gender : Gender
 
