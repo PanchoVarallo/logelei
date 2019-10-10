@@ -4,6 +4,6 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - pytest --cov
+  - pytest --cov=logelei/
 after_success:
   - codecov
