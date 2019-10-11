@@ -1,7 +1,33 @@
 import copy
 import networkx as nx
+from enum import Enum
 
-from logelei.year2019number41._Node import _Node
+
+class Person:
+    def __init__(self, name, gender):
+        """
+        Constructor.
+
+        Parameters
+        ----------
+        name : str
+        gender : Gender
+        """
+        self.name = name
+        self.gender = gender
+
+    def __eq__(self, other):
+        if not isinstance(other, Person):
+            return NotImplemented
+        return self.name == other.name and self.gender == other.gender
+
+    def __repr__(self):
+        return self.name + "|" + self.gender.__str__()
+
+
+class Gender(Enum):
+    MASCULINE = 1
+    FEMININE = 2
 
 
 class Graph:
@@ -38,3 +64,27 @@ class Graph:
     @staticmethod
     def get_number_of_graph_paths(graph):
         return len(list(nx.all_simple_paths(graph.nx_graph, source=graph.source_node, target=graph.target_node)))
+
+
+class _Node:
+    def __init__(self, person: Person, seat: int, number: int):
+        """
+        Constructor.
+
+        Parameters
+        ----------
+        person : Person
+        seat : int
+        number : int
+        """
+        self.person = person
+        self.seat = seat
+        self.number = number
+
+    def __repr__(self):
+        return self.person.name
+
+
+class Order(Enum):
+    ORDERED = 1
+    UNORDERED = 2
