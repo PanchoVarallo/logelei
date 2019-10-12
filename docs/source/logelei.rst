@@ -11,4 +11,5 @@ Subpackages
 
 .. toctree::
 
+   logelei.tests
    logelei.year2019number41
