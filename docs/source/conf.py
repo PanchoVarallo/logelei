@@ -15,6 +15,9 @@ import sys
 import alabaster
 sys.path.insert(0, '../..')
 
+# For local builds
+# sys.path.insert(0, '../..')
+
 
 # -- Project information -----------------------------------------------------
 
