@@ -7,7 +7,11 @@ Welcome to Logelei's documentationss!
 ===================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    meinVersuch
+
+.. toctree::
+   :maxdepth: 1
+
    logelei
