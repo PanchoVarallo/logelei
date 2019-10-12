@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Logelei's documentation!
+Welcome to Logelei's documentationss!
 ===================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 4
 
    logelei
