@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.insert(0, '..')
+sys.path.insert(0, '../..')
 
 
 # -- Project information -----------------------------------------------------
@@ -75,3 +75,6 @@ autodoc_member_order = 'groupwise'
 exclude_patterns = ['_build', '**tests**', '**spi**']
 
 master_doc = 'index'
+
+add_module_names = False
+add_function_parentheses = True
