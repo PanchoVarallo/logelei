@@ -19,8 +19,8 @@ sys.path.insert(0, '../..')
 # -- Project information -----------------------------------------------------
 
 project = 'logelei'
-copyright = '2019, Author'
-author = 'Author'
+copyright = '2019, Mathias Sirvent'
+author = 'Mathias Sirvent'
 
 
 # -- General configuration ---------------------------------------------------
@@ -38,10 +38,6 @@ extensions = [
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-
-# General information about the project.
-project = u'Die ZEIT - Logelei'
-author = u'Mathias Sirvent'
 
 # The short X.Y version.
 version = u'1.0.0'
