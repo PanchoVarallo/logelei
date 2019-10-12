@@ -9,4 +9,5 @@ Welcome to Logelei's documentationss!
 .. toctree::
    :maxdepth: 4
 
+   meinVersuch
    logelei
