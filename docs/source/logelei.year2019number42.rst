@@ -9,12 +9,16 @@ logelei.year2019number42 package
 Submodules
 ----------
 
+logelei.year2019number42.GraphComponents module
+-----------------------------------------------
 
 .. automodule:: logelei.year2019number42.GraphComponents
    :members:
    :undoc-members:
    :show-inheritance:
 
+logelei.year2019number42.Validator module
+-----------------------------------------
 
 .. automodule:: logelei.year2019number42.Validator
    :members:

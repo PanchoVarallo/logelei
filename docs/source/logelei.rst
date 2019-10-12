@@ -18,6 +18,8 @@ Subpackages
 Submodules
 ----------
 
+logelei.GraphComponents module
+------------------------------
 
 .. automodule:: logelei.GraphComponents
    :members:

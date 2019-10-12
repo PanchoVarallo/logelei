@@ -118,5 +118,5 @@ exclude_patterns = ['_build', '**tests**', '**spi**']
 
 master_doc = 'index'
 
-# add_module_names = False
+add_module_names = False
 add_function_parentheses = True
