@@ -74,3 +74,4 @@ todo_include_todos = True
 autodoc_member_order = 'groupwise'
 exclude_patterns = ['_build', '**tests**', '**spi**']
 
+master_doc = 'index'
