@@ -18,7 +18,7 @@ sys.path.insert(0, '../..')
 
 # -- Project information -----------------------------------------------------
 
-project = 'logelei'
+project = 'Die ZEIT - Logelei'
 copyright = '2019, Mathias Sirvent'
 author = 'Mathias Sirvent'
 
@@ -68,10 +68,10 @@ html_theme_path = [alabaster.get_path()]
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {'github_banner': True,
-                      'github_user': 'PanchoVarallo',
-                      'github_repo': 'logelei',
-                      "show_powered_by": False}
+#html_theme_options = {'github_banner': True,
+#                      'github_user': 'PanchoVarallo',
+#                      'github_repo': 'logelei',
+#                      "show_powered_by": False}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
