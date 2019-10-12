@@ -9,7 +9,15 @@ logelei.year2019number41 package
 Submodules
 ----------
 
-.. toctree::
 
-   logelei.year2019number41.GraphComponents
-   logelei.year2019number41.Validator
+.. automodule:: logelei.year2019number41.GraphComponents
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. automodule:: logelei.year2019number41.Validator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

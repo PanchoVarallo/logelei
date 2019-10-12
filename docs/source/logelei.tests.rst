@@ -9,6 +9,9 @@ logelei.tests package
 Submodules
 ----------
 
-.. toctree::
 
-   logelei.tests.test_Year2019number41
+.. automodule:: logelei.tests.test_Year2019number41
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
