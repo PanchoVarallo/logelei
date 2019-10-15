@@ -9,10 +9,10 @@ logelei.tests package
 Submodules
 ----------
 
-logelei.tests.test\_Year2019number41 module
--------------------------------------------
+logelei.tests.test\_Y2019Nr41 module
+------------------------------------
 
-.. automodule:: logelei.tests.test_Year2019number41
+.. automodule:: logelei.tests.test_Y2019Nr41
    :members:
    :undoc-members:
    :show-inheritance:

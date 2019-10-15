@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-import logelei.year2019number41.GraphComponents as gc
-import logelei.year2019number41.Validator as vl
+import logelei.Y2019Nr41.GraphComponents as gc
+import logelei.Y2019Nr41.Validator as vl
 
 
 class TestYear2019Number41(TestCase):
@@ -12,7 +12,7 @@ class TestYear2019Number41(TestCase):
         anna = gc.Person("Anna", gc.Gender.FEMININE)
         frank = gc.Person("Frank", gc.Gender.MASCULINE)
         tina = gc.Person("Tina", gc.Gender.FEMININE)
-        torsten = gc.Person("Torsten", gc.Gender.MASCULINE)
+        torsten = gc.Pemrson("Torsten", gc.Gender.MASCULINE)
         sabine = gc.Person("Sabine", gc.Gender.FEMININE)
         thomas = gc.Person("Thomas", gc.Gender.MASCULINE)
         lena = gc.Person("Lena", gc.Gender.FEMININE)

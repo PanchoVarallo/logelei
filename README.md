@@ -5,13 +5,20 @@
 
 The package `logelei` contains algorithms to solve tasks from https://www.zeit.de/autoren/Z/Zweistein.
 
-### Year 2019, Number 41
-##### The task
-https://www.zeit.de/2019/41/spiele-logelei-41
+### Installation
+TODO: PIP STATEMENT
 
-##### The model
-We build up a graph that encodes all possible combinations and discard wrong combinations.
+### Documentation
+The current documentation can be found on https://logelei.readthedocs.io/en/latest/. 
 
-##### The solution
-See `test_Year2019number41.py`:
-`[[Jolanda, Lena, Frank, Tina, Anna, Torsten, Sabine, Thomas, Jolanda]]`
+### For Developers
+Before creating a pull request, please go to `docs/source` to create a fresh documentation by running
+```sh
+# 1. Delete all rst-files except index.rst, make.bat, Makefile
+# 2. clean the current build folder with
+make clean
+# 3. Update the documentation by creating rst-files from docstrings
+sphinx-apidoc -f -M -o . ../../logelei
+# 4. If you want to create a local documentation
+make html
+```

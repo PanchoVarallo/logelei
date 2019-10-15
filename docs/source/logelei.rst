@@ -11,18 +11,5 @@ Subpackages
 
 .. toctree::
 
+   logelei.Y2019Nr41
    logelei.tests
-   logelei.year2019number41
-   logelei.year2019number42
-
-Submodules
-----------
-
-logelei.GraphComponents module
-------------------------------
-
-.. automodule:: logelei.GraphComponents
-   :members:
-   :undoc-members:
-   :show-inheritance:
-

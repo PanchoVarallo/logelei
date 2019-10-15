@@ -1,7 +1,7 @@
 import networkx as nx
 from abc import ABCMeta, abstractmethod
 
-from logelei.year2019number41.GraphComponents import Order
+from logelei.Y2019Nr41.GraphComponents import Order
 
 
 class Validator:

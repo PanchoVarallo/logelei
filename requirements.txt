@@ -1,3 +1,4 @@
 networkx>=2.2
 codecov>=2.0.15
 pytest-cov>=2.8.1
+Sphinx>=1.8.5
