@@ -10,5 +10,5 @@ Welcome to Logelei's documentation
    :maxdepth: 1
 
    intro
-   year2019
+   solutions
    logelei

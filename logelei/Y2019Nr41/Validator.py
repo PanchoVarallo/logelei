@@ -116,7 +116,7 @@ class InBetweenGender(_Rule):
         Parameters
         ----------
         path : path from NetworkX
-            A path from NetworkX. Every _Rule has to implement this method.
+            A path from NetworkX. Every logelei.Y2019Nr41.Validator._Rule has to implement this method.
         """
         for index, node in enumerate(path[1:-1]):
             shifted_index = index + 1
@@ -175,7 +175,7 @@ class DistanceInBetween(_Rule):
         Parameters
         ----------
         path : path from NetworkX
-            A path from NetworkX. Every _Rule has to implement this method.
+            A path from NetworkX. Every logelei.Y2019Nr41.Validator._Rule has to implement this method.
         """
         cut = -1 - self.__in_between
         for index, node in enumerate(path[:cut]):
