@@ -42,7 +42,7 @@ class Graph:
 
     Parameters
     ----------
-    persons : list of Person
+    persons : list[Person]
         The list of persons that are going to sit at the table.
     """
 
