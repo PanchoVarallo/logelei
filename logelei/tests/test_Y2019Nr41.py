@@ -18,8 +18,8 @@ class TestYear2019Number41(TestCase):
         lena = gc.Person("Lena", gc.Gender.FEMININE)
         graph = gc.Graph([jolanda, anna, frank, tina, torsten, sabine, thomas, lena])
 
-        # Define rules. Note: rules are list of list of rules, e.g. [[e1, e2, [e3, e4]]]. This means that
-        # e1 and e2 and (e3 or e4) have to be fulfilled.
+        # Define rules. Note: rules are list of list of rules, e.g. [[e1], [e2], [e3, e4]]].
+        # This means that e1 and e2 and (e3 or e4) have to be fulfilled.
         rules = [[vl.DistanceInBetween(False, anna, frank, 0, gc.Order.UNORDERED)],
                  [vl.DistanceInBetween(False, tina, torsten, 0, gc.Order.UNORDERED)],
                  [vl.DistanceInBetween(True, thomas, jolanda, 0, gc.Order.UNORDERED)],
