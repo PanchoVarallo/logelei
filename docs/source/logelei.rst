@@ -1,3 +1,6 @@
+.. _logelei:
+
+
 logelei package
 ===============
 

@@ -1,10 +1,15 @@
-Year 2019
+Solutions
 =========
 
-https://logelei.readthedocs.io/en/latest/
+Solutions for Year 2019
+***********************
+
+Edition 41
+^^^^^^^^^^
+https://www.zeit.de/2019/41/spiele-logelei-41
 
 The Task (in German)
-********************
+""""""""""""""""""""
 
 Jolanda muss für ihre Feier anhand der Wünsche der Gäste die Sitzordnung an ihrem achteckigen Tisch festlegen.
 
@@ -23,12 +28,11 @@ Torsten: "Ich möchte mit Tina reden können. Tina soll also neben mir sitzen, o
 Lena: "Damit ich Annas Parfum nicht riechen muss, sollen mindestens zwei Personen zwischen uns sitzen."
 
 The `Python` Solution
-*********************
+"""""""""""""""""""""
 
 Import the packages.
 
 .. code-block:: python
-   :emphasize-lines: 3,5
 
    import logelei.Y2019Nr41.Validator as vl
    import logelei.Y2019Nr41.GraphComponents as gc
@@ -36,7 +40,6 @@ Import the packages.
 Define the persons and the graph.
 
 .. code-block:: python
-   :emphasize-lines: 3,5
 
    jolanda = gc.Person("Jolanda", gc.Gender.FEMININE)
    anna = gc.Person("Anna", gc.Gender.FEMININE)
@@ -51,7 +54,6 @@ Define the persons and the graph.
 Define rules. Note: rules are list of list of rules, e.g. [[e1, e2, [e3, e4]]]. This means that e1 and e2 and (e3 or e4) have to be fulfilled.
 
 .. code-block:: python
-   :emphasize-lines: 3,5
 
    rules = [[vl.DistanceInBetween(False, anna, frank, 0, gc.Order.UNORDERED)],
             [vl.DistanceInBetween(False, tina, torsten, 0, gc.Order.UNORDERED)],
@@ -67,14 +69,13 @@ Define rules. Note: rules are list of list of rules, e.g. [[e1, e2, [e3, e4]]]. 
 Define a validator and apply the rules on the graph.
 
 .. code-block:: python
-   :emphasize-lines: 3,5
 
    vl.Validator(rules).apply_rules(graph)
 
 Print the final solution.
 
 .. code-block:: python
-   :emphasize-lines: 3,5
+   :emphasize-lines: 2
 
    print("\n" + str(final_path))
    [[Jolanda, Lena, Frank, Tina, Anna, Torsten, Sabine, Thomas, Jolanda]]
