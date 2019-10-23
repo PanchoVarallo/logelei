@@ -33,7 +33,7 @@ class TestYear2019Number41(TestCase):
 
         assert gc.Graph.get_number_of_graph_paths(graph) == 5040, "We initially expect 5040 possible solutions"
         # Apply the rules and reduce the graph
-        vl.Validator(rules).validate_and_reduce(graph)
+        vl.Validator(rules).apply_rules(graph)
         assert gc.Graph.get_number_of_graph_paths(graph) == 1, "We finally expect 1 possible solutions"
         # Print the final path that fulfils all rules
         final_path = gc.Graph.get_graph_paths(graph)
@@ -58,7 +58,7 @@ class TestYear2019Number41(TestCase):
         rules = [[vl.DistanceInBetween(True, frank, anna, 0, gc.Order.ORDERED)]]
 
         assert gc.Graph.get_number_of_graph_paths(graph) == 2, "We initially expect 2 possible solutions"
-        vl.Validator(rules).validate_and_reduce(graph)
+        vl.Validator(rules).apply_rules(graph)
         assert gc.Graph.get_number_of_graph_paths(graph) == 1, "We finally expect 1 possible solutions"
         final_path = gc.Graph.get_graph_paths(graph)
         for path in final_path:

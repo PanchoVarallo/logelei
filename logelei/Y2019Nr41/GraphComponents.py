@@ -17,7 +17,7 @@ class Person:
 
     Parameters
     ----------
-    name : list of str
+    name : str
         The name of the person.
     gender : Gender
         The gender of the person.
