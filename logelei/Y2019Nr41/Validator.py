@@ -6,26 +6,26 @@ from logelei.Y2019Nr41.GraphComponents import Order
 
 class Validator:
     def __init__(self, list_of_list_of_rules):
+        self.__list_of_list_of_rules = list_of_list_of_rules
+
+    def validate_and_reduce(self, graph):
         """
-        Constructor.
+        Method where a Graph .
 
         Parameters
         ----------
-        list_of_list_of_rules : list of (list of _Rule)
+        graph : Graph
+            the created Graph
 
         Examples
         --------
-        Examples should be written in doctest format, and should illustrate how
-        to use the function.
+
 
         >>>
         >>>
         >>> Validator([[DistanceInBetween(True, frank, anna, 0, Order.ORDERED)]])
 
         """
-        self.__list_of_list_of_rules = list_of_list_of_rules
-
-    def validate_and_reduce(self, graph):
         nodes_to_remove = set()
         paths = list(nx.all_simple_paths(graph.nx_graph, source=graph.source_node, target=graph.target_node))
         for path in paths:
