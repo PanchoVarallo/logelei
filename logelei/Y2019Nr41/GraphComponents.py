@@ -35,6 +35,13 @@ class Gender(Enum):
 
 
 class Graph:
+    """
+    Defines graph of all possibilities how persons can sit.
+
+    ----------
+    persons : list of Person
+        the list of persons that are going to sit at the table.
+    """
     def __init__(self, persons):
         self.__persons = persons
         self.__build_graph(persons)
