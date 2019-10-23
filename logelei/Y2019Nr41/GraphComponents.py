@@ -5,14 +5,14 @@ from enum import Enum
 
 class Person:
     """
-    Defines Person initialized with name and gender.
+    Defines a person initialized with name and gender.
 
     Parameters
     ----------
     name : str
-        the name of the person
+        The name of the person.
     gender : Gender
-        the gender of the person
+        The Gender of the person.
     """
     def __init__(self, name, gender):
         self.name = name
@@ -39,9 +39,10 @@ class Graph:
     """
     Defines graph of all possibilities how persons can sit.
 
+    Parameters
     ----------
     persons : list of Person
-        the list of persons that are going to sit at the table.
+        The list of persons that are going to sit at the table.
     """
     def __init__(self, persons):
         self.__persons = persons
