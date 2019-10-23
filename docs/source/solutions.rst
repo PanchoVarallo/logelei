@@ -1,4 +1,4 @@
-.. _logelei:
+.. _solutions:
 
 Solutions
 =========

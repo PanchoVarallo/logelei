@@ -9,9 +9,9 @@ The package `logelei` contains algorithms to solve tasks from https://www.zeit.d
 https://logelei.readthedocs.io/en/latest/. 
 
 ### For Developers
-Feel free to add more solution. Please create proper documentations and docstrings. Before creating a pull request, please go to `docs/source` to create a fresh documentation by running
+Feel free to add more solutions. Please create proper documentations and docstrings. Before creating a pull request, please go to `docs/source` to create a fresh documentation by running
 ```sh
-# 1. Delete all rst-files except index.rst, make.bat, Makefile
+# 1. Delete all rst-files except index.rst, solutions.rst, make.bat, Makefile
 # 2. clean the current build folder with
 make clean
 # 3. Update the documentation by creating rst-files from docstrings
