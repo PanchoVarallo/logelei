@@ -17,7 +17,7 @@ class Validator:
 
     Parameters
     ----------
-    name : list of list of _Rule.
+    name : list[list[_Rule]].
         The list of list of rules.
 
     Examples
@@ -82,24 +82,24 @@ class Validator:
 
 
 class InBetweenGender(_Rule):
+    """
+    Rule to define that a person wants to sit between to persons of the same gender.
+
+    Parameters
+    ----------
+    allowed : bool
+        If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
+    person  : Person
+    gender : Gender
+
+    Examples
+    --------
+    After defining anna, we define that she has to sit between two men.
+
+    >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
+    >>> InBetweenGender(True, anna, GraphComponents.Gender.MASCULINE)
+    """
     def __init__(self, allowed, person, gender):
-        """
-        Rule to define that a person wants to sit between to persons of the same gender.
-
-        Parameters
-        ----------
-        allowed : bool
-            If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
-        person  : Person
-        gender : Gender
-
-        Examples
-        --------
-        After defining anna, we define that she has to sit between two men.
-
-        >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
-        >>> InBetweenGender(True, anna, GraphComponents.Gender.MASCULINE)
-        """
         self.__allowed = allowed
         self.__person = person
         self.__gender = gender
@@ -128,30 +128,29 @@ class InBetweenGender(_Rule):
 
 
 class DistanceInBetween(_Rule):
+    """
+    Rule two define that two persons want to sit .
 
+    Parameters
+    ----------
+    allowed : bool
+        If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
+    left_person : Person
+    right_person : Person
+    in_between : int
+        Number of persons in between the two persons.
+    ordered : Order
+        If ORDERED, the order is relevant, otherwise it is not.
+
+    Examples
+    --------
+    After defining persons, we define that frank has to sit directly to the left of anna.
+
+    >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
+    >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)
+    >>> DistanceInBetween(True, frank, anna, 0, Order.ORDERED)
+    """
     def __init__(self, allowed, left_person, right_person, in_between, ordered):
-        """
-        Rule two define that two persons want to sit .
-
-        Parameters
-        ----------
-        allowed : bool
-            If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
-        left_person : Person
-        right_person : Person
-        in_between : int
-            Number of persons in between the two persons.
-        ordered : Order
-            If ORDERED, the order is relevant, otherwise it is not.
-
-        Examples
-        --------
-        After defining persons, we define that frank has to sit directly to the left of anna.
-
-        >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
-        >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)
-        >>> DistanceInBetween(True, frank, anna, 0, Order.ORDERED)
-        """
         self.__allowed = allowed
         self.__left_person = left_person
         self.__right_person = right_person

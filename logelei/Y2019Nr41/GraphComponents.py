@@ -75,7 +75,7 @@ class Graph:
     @staticmethod
     def get_graph_paths(graph):
         """
-         For an initialized graph, you get the valid graph paths, that is, all valid positions at the table.
+         Get valid graph paths, that is, all valid positions at the table.
 
          Parameters
          ----------
@@ -87,7 +87,7 @@ class Graph:
     @staticmethod
     def get_number_of_graph_paths(graph):
         """
-         For an initialized graph, you get the number of valid graph paths, that is, the number of all valid
+         Get number of valid graph paths, that is, the number of all valid
          positions at the table.
 
          Parameters
