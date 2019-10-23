@@ -9,4 +9,5 @@ Welcome to Logelei's documentation
 .. toctree::
    :maxdepth: 1
 
+   year2019
    logelei
