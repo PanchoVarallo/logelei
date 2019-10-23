@@ -13,7 +13,7 @@ class _Rule(metaclass=ABCMeta):
 
 class Validator:
     """
-    A validator that has to be given a list of list of rules.
+    A validator with a list of list of rules.
 
     Parameters
     ----------
@@ -32,7 +32,7 @@ class Validator:
 
     def apply_rules(self, graph):
         """
-        Most important method. Can be used to apply the given rules on a graph.
+        Most important method. Apply rules on a graph.
 
         Parameters
         ----------
@@ -41,9 +41,9 @@ class Validator:
 
         Examples
         --------
-        After defining three persons, we define that Frank wants to sit left of Anna and apply the rule on the graph.
-        Afterwards, the graph has a reduced number of valid paths. The final path solution is
-        [[Jolanda, Frank, Anna, Jolanda]] that has to be read counterclockwise.
+        After defining three persons, we define that Frank sits to the left of Anna and
+        apply the rule on the graph. The final path solution is
+        [[Jolanda, Frank, Anna, Jolanda]] and it has to be read counterclockwise.
 
         >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
         >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)
@@ -86,20 +86,20 @@ class Validator:
 
 class InBetweenGender(_Rule):
     """
-    Rule to define that a person wants to sit between to persons of the same gender.
+    Rule to define that a person sits between to persons of the same gender.
 
     Parameters
     ----------
     allowed : bool
-        If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
+        If true, the rule is fulfilled.
     person  : Person
-        The corresponding person.
+        The person.
     gender : Gender
         The gender of the two neighbors.
 
     Examples
     --------
-    After defining anna, we define that she has to sit between two men.
+    After defining anna, we define that she sits between two men.
 
     >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
     >>> InBetweenGender(True, anna, GraphComponents.Gender.MASCULINE)
@@ -135,12 +135,12 @@ class InBetweenGender(_Rule):
 
 class DistanceInBetween(_Rule):
     """
-    Rule to define that two persons want to sit next to each other, or with a certain distance, or ...
+    Rule to define how two persons sit in relation to each other.
 
     Parameters
     ----------
     allowed : bool
-        If true, it is ensured that the rule is fulfilled.
+        If true, the rule is fulfilled.
     left_person : Person
         The person on the left.
     right_person : Person
@@ -152,7 +152,7 @@ class DistanceInBetween(_Rule):
 
     Examples
     --------
-    After defining persons, we define that Frank has to sit directly to the left of Anna.
+    After defining persons, we define that Frank sits directly to the left of Anna.
 
     >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
     >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)

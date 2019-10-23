@@ -39,7 +39,7 @@ Import the packages.
    import logelei.Y2019Nr41.Validator as vl
    import logelei.Y2019Nr41.GraphComponents as gc
 
-Define the persons and the graph.
+Define the persons.
 
 .. code-block:: python
 
@@ -51,9 +51,15 @@ Define the persons and the graph.
    sabine = gc.Person("Sabine", gc.Gender.FEMININE)
    thomas = gc.Person("Thomas", gc.Gender.MASCULINE)
    lena = gc.Person("Lena", gc.Gender.FEMININE)
+
+Define the graph.
+
+.. code-block:: python
+
    graph = gc.Graph([jolanda, anna, frank, tina, torsten, sabine, thomas, lena])
 
-Define rules. Note: rules are list of list of rules, e.g. [[e1, e2, [e3, e4]]]. This means that e1 and e2 and (e3 or e4) have to be fulfilled.
+Define the rules. Note: rules are list of list of rules, e.g. [[e1, e2, [e3, e4]]].
+This means that e1 and e2 and (e3 or e4) have to be fulfilled.
 
 .. code-block:: python
 
@@ -68,7 +74,7 @@ Define rules. Note: rules are list of list of rules, e.g. [[e1, e2, [e3, e4]]]. 
             [vl.DistanceInBetween(False, anna, lena, 0, gc.Order.UNORDERED)],
             [vl.DistanceInBetween(False, anna, lena, 1, gc.Order.UNORDERED)]]
 
-Define a validator and apply the rules on the graph.
+Define a validator to apply the rules on the graph.
 
 .. code-block:: python
 

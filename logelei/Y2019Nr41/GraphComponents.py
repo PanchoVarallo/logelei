@@ -5,7 +5,7 @@ from enum import Enum
 
 class Gender(Enum):
     """
-    Defines FEMININE and MASCULINE gender.
+    FEMININE and MASCULINE gender.
     """
     MASCULINE = 1
     FEMININE = 2
@@ -13,7 +13,7 @@ class Gender(Enum):
 
 class Person:
     """
-    Defines a person initialized with name and gender.
+    A person with name and gender.
 
     Parameters
     ----------
@@ -38,12 +38,12 @@ class Person:
 
 class Graph:
     """
-    Defines graph of all possibilities how persons can sit.
+    A graph of all possibilities how persons can sit.
 
     Parameters
     ----------
     persons : list[Person]
-        The list of persons that are going to sit at the table.
+        The list of persons that sit at the table.
     """
 
     def __init__(self, persons):
@@ -75,7 +75,7 @@ class Graph:
     @staticmethod
     def get_graph_paths(graph):
         """
-         Get valid graph paths, that is, all valid positions at the table.
+         Get valid paths, that is, all valid positions at the table.
 
          Parameters
          ----------
@@ -87,7 +87,7 @@ class Graph:
     @staticmethod
     def get_number_of_graph_paths(graph):
         """
-         Get number of valid graph paths, that is, the number of all valid
+         Get number of valid paths, that is, the number of all valid
          positions at the table.
 
          Parameters
@@ -110,7 +110,7 @@ class _Node:
 
 class Order(Enum):
     """
-    Defines ORDERED and UNORDERED rule.
+    ORDERED and UNORDERED rule.
     """
     ORDERED = 1
     UNORDERED = 2
