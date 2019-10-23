@@ -36,12 +36,13 @@ class Validator:
 
         Parameters
         ----------
-        name : Graph.
+        name : Graph
             The graph.
 
         Examples
         --------
         After defining three persons, we define that Frank wants to sit left of Anna and apply the rule on the graph.
+        Afterwards, the graph has a reduced number of valid paths.
 
         >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
         >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)
@@ -113,6 +114,7 @@ class InBetweenGender(_Rule):
         Parameters
         ----------
         path : path from NetworkX
+            A path from NetworkX. Every _Rule has to implement this method.
         """
         for index, node in enumerate(path[1:-1]):
             shifted_index = index + 1
@@ -171,7 +173,7 @@ class DistanceInBetween(_Rule):
         Parameters
         ----------
         path : path from NetworkX
-            The path from that NetworkX gives back. Every _Rule has to implement this method.
+            A path from NetworkX. Every _Rule has to implement this method.
         """
         cut = -1 - self.__in_between
         for index, node in enumerate(path[:cut]):
