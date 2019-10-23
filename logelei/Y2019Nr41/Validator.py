@@ -19,8 +19,6 @@ class Validator:
 
         Examples
         --------
-
-
         >>>
         >>>
         >>> Validator([[DistanceInBetween(True, frank, anna, 0, Order.ORDERED)]])

@@ -4,6 +4,15 @@ from enum import Enum
 
 
 class Person:
+    """
+    Defines Person initialized with name and gender.
+    Parameters
+    ----------
+    name : str
+        the name of the person
+    gender : Gender
+        the gender of the person
+    """
     def __init__(self, name, gender):
         self.name = name
         self.gender = gender
@@ -18,6 +27,9 @@ class Person:
 
 
 class Gender(Enum):
+    """
+    Defines MASCULINE and FEMININE gender.
+    """
     MASCULINE = 1
     FEMININE = 2
 
