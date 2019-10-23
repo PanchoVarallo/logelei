@@ -1,8 +1,7 @@
 Year 2019
 =========
 
-Number 41
----------
+https://logelei.readthedocs.io/en/latest/
 
 The Task (in German)
 ********************
@@ -78,3 +77,6 @@ Print the final solution.
    :emphasize-lines: 3,5
 
    print("\n" + str(final_path))
+   [[Jolanda, Lena, Frank, Tina, Anna, Torsten, Sabine, Thomas, Jolanda]]
+
+Note that the solution has to be read counterclockwise.

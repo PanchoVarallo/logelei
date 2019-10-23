@@ -42,13 +42,15 @@ class Validator:
         Examples
         --------
         After defining three persons, we define that Frank wants to sit left of Anna and apply the rule on the graph.
-        Afterwards, the graph has a reduced number of valid paths.
+        Afterwards, the graph has a reduced number of valid paths. The final path solution is
+        [[Jolanda, Frank, Anna, Jolanda]] that has to be read counterclockwise.
 
         >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
         >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)
         >>> jolanda = GraphComponents.Person("Jolanda", GraphComponents.Gender.FEMININE)
         >>> graph = GraphComponents.Graph([jolanda, anna, frank])
-        >>> Validator([[DistanceInBetween(True, frank, anna, 0, Order.ORDERED)]]).apply_rules(graph)
+        >>> Validator([[DistanceInBetween(True, frank, anna, 0, GraphComponents.Order.ORDERED)]]).apply_rules(graph)
+        >>> final_path = GraphComponents.Graph.get_graph_paths(graph)
         """
         nodes_to_remove = set()
         paths = list(nx.all_simple_paths(graph.nx_graph, source=graph.source_node, target=graph.target_node))
