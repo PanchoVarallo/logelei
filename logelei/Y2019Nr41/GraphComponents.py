@@ -6,6 +6,7 @@ from enum import Enum
 class Person:
     """
     Defines Person initialized with name and gender.
+
     Parameters
     ----------
     name : str
