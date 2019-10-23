@@ -5,11 +5,8 @@
 
 The package `logelei` contains algorithms to solve tasks from https://www.zeit.de/autoren/Z/Zweistein.
 
-### Installation
-TODO: PIP STATEMENT
-
-### Documentation
-The current documentation can be found on https://logelei.readthedocs.io/en/latest/. 
+### Documentation and Usage
+https://logelei.readthedocs.io/en/latest/
 
 ### For Developers
 Before creating a pull request, please go to `docs/source` to create a fresh documentation by running

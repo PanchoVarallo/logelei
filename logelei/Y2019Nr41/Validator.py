@@ -90,7 +90,9 @@ class InBetweenGender(_Rule):
     allowed : bool
         If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
     person  : Person
+        The corresponding person.
     gender : Gender
+        The gender of the two neighbors.
 
     Examples
     --------
@@ -129,22 +131,24 @@ class InBetweenGender(_Rule):
 
 class DistanceInBetween(_Rule):
     """
-    Rule two define that two persons want to sit .
+    Rule to define that two persons want to sit next to each other, or with a certain distance, or ...
 
     Parameters
     ----------
     allowed : bool
-        If true, this rule ensures that the rule is fulfilled, otherwise it ensures that the rule is not fulfilled.
+        If true, it is ensured that the rule is fulfilled.
     left_person : Person
+        The person on the left.
     right_person : Person
+        The person on the right.
     in_between : int
         Number of persons in between the two persons.
     ordered : Order
-        If ORDERED, the order is relevant, otherwise it is not.
+        If ORDERED, the order is relevant.
 
     Examples
     --------
-    After defining persons, we define that frank has to sit directly to the left of anna.
+    After defining persons, we define that Frank has to sit directly to the left of Anna.
 
     >>> anna = GraphComponents.Person("Anna", GraphComponents.Gender.FEMININE)
     >>> frank = GraphComponents.Person("Frank", GraphComponents.Gender.MASCULINE)
@@ -167,6 +171,7 @@ class DistanceInBetween(_Rule):
         Parameters
         ----------
         path : path from NetworkX
+            The path from that NetworkX gives back. Every _Rule has to implement this method.
         """
         cut = -1 - self.__in_between
         for index, node in enumerate(path[:cut]):
