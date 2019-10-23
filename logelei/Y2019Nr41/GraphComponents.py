@@ -19,11 +19,11 @@ class Person:
     ----------
     name : list of str
         The name of the person.
-    gender : list of Gender
-        The Gender of the person.
+    gender : Gender
+        The gender of the person.
     """
 
-    def __init__(self, name: str, gender: Gender):
+    def __init__(self, name, gender):
         self.name = name
         self.gender = gender
 
@@ -74,15 +74,32 @@ class Graph:
 
     @staticmethod
     def get_graph_paths(graph):
+        """
+         For an initialized graph, you get the valid graph paths, that is, all valid positions at the table.
+
+         Parameters
+         ----------
+         graph : Graph
+             The graph.
+         """
         return list(nx.all_simple_paths(graph.nx_graph, source=graph.source_node, target=graph.target_node))
 
     @staticmethod
     def get_number_of_graph_paths(graph):
+        """
+         For an initialized graph, you get the number of valid graph paths, that is, the number of all valid
+         positions at the table.
+
+         Parameters
+         ----------
+         graph : Graph
+             The graph.
+         """
         return len(list(nx.all_simple_paths(graph.nx_graph, source=graph.source_node, target=graph.target_node)))
 
 
 class _Node:
-    def __init__(self, person: Person, seat: int, number: int):
+    def __init__(self, person, seat, number):
         self.person = person
         self.seat = seat
         self.number = number
