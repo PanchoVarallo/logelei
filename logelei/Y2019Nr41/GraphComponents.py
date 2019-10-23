@@ -9,7 +9,7 @@ class Person:
 
     Parameters
     ----------
-    name : str
+    name : list of str
         The name of the person.
     gender : Gender
         The Gender of the person.
@@ -41,7 +41,7 @@ class Graph:
 
     Parameters
     ----------
-    persons : Person
+    persons : list of Person
         The list of persons that are going to sit at the table.
     """
     def __init__(self, persons):
