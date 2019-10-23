@@ -3,6 +3,14 @@ import networkx as nx
 from enum import Enum
 
 
+class Gender(Enum):
+    """
+    Defines FEMININE and MASCULINE gender.
+    """
+    MASCULINE = 1
+    FEMININE = 2
+
+
 class Person:
     """
     Defines a person initialized with name and gender.
@@ -11,10 +19,11 @@ class Person:
     ----------
     name : list of str
         The name of the person.
-    gender : Gender
+    gender : list of Gender
         The Gender of the person.
     """
-    def __init__(self, name, gender):
+
+    def __init__(self, name: str, gender: Gender):
         self.name = name
         self.gender = gender
 
@@ -27,14 +36,6 @@ class Person:
         return self.name + "|" + self.gender.__str__()
 
 
-class Gender(Enum):
-    """
-    Defines FEMININE and MASCULINE gender.
-    """
-    MASCULINE = 1
-    FEMININE = 2
-
-
 class Graph:
     """
     Defines graph of all possibilities how persons can sit.
@@ -44,6 +45,7 @@ class Graph:
     persons : list of Person
         The list of persons that are going to sit at the table.
     """
+
     def __init__(self, persons):
         self.__persons = persons
         self.__build_graph(persons)
