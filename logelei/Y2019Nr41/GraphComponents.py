@@ -29,7 +29,7 @@ class Person:
 
 class Gender(Enum):
     """
-    Defines MASCULINE and FEMININE gender.
+    Defines FEMININE and MASCULINE gender.
     """
     MASCULINE = 1
     FEMININE = 2
@@ -41,7 +41,7 @@ class Graph:
 
     Parameters
     ----------
-    persons : list of Person
+    persons : Person
         The list of persons that are going to sit at the table.
     """
     def __init__(self, persons):
