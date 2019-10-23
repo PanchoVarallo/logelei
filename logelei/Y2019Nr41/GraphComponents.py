@@ -5,14 +5,6 @@ from enum import Enum
 
 class Person:
     def __init__(self, name, gender):
-        """
-        Constructor.
-
-        Parameters
-        ----------
-        name : str
-        gender : Gender
-        """
         self.name = name
         self.gender = gender
 
@@ -68,15 +60,6 @@ class Graph:
 
 class _Node:
     def __init__(self, person: Person, seat: int, number: int):
-        """
-        Constructor.
-
-        Parameters
-        ----------
-        person : Person
-        seat : int
-        number : int
-        """
         self.person = person
         self.seat = seat
         self.number = number
@@ -86,5 +69,8 @@ class _Node:
 
 
 class Order(Enum):
+    """
+    Defines ORDERED and UNORDERED rule.
+    """
     ORDERED = 1
     UNORDERED = 2
