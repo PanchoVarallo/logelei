@@ -80,7 +80,7 @@ Define a validator to apply the rules on the graph.
 
    vl.Validator(rules).apply_rules(graph)
 
-Get and print the final solution.
+Get and print final solution.
 
 .. code-block:: python
    :emphasize-lines: 3
