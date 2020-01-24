@@ -85,6 +85,7 @@ Print the final solution.
 .. code-block:: python
    :emphasize-lines: 2
 
+   final_path = gc.Graph.get_graph_paths(graph)
    print("\n" + str(final_path))
    [[Jolanda, Lena, Frank, Tina, Anna, Torsten, Sabine, Thomas, Jolanda]]
 
