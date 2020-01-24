@@ -80,10 +80,10 @@ Define a validator to apply the rules on the graph.
 
    vl.Validator(rules).apply_rules(graph)
 
-Print the final solution.
+Get and print the final solution.
 
 .. code-block:: python
-   :emphasize-lines: 2
+   :emphasize-lines: 3
 
    final_path = gc.Graph.get_graph_paths(graph)
    print("\n" + str(final_path))
