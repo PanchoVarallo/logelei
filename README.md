@@ -1,5 +1,5 @@
 # logelei
-[![Build Status](https://travis-ci.org/PanchoVarallo/logelei.svg?branch=master)](https://travis-ci.org/PanchoVarallo/logelei)
+[![Build Status](https://travis-ci.com/PanchoVarallo/logelei.svg?branch=master)](https://travis-ci.com/github/PanchoVarallo/logeli)
 [![codecov](https://codecov.io/gh/PanchoVarallo/logelei/branch/master/graph/badge.svg)](https://codecov.io/gh/PanchoVarallo/logelei)
 [![Documentation Status](https://readthedocs.org/projects/logelei/badge/?version=latest)](https://logelei.readthedocs.io/en/latest/?badge=latest)
 
