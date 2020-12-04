@@ -11,7 +11,7 @@ https://logelei.readthedocs.io/en/latest/.
 ### For Developers
 Feel free to add more solutions. 
 Stick to the documentation styles and patterns.
-Before creating a pull request, go to `docs/source` to create a fresh documentation by running
+Before creating a pull request, go to `docs/source` to create a fresh documentation by running:
 ```sh
 # 1. Delete all rst-files except index.rst, solutions.rst, make.bat, Makefile
 # 2. clean the current build folder with
