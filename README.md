@@ -1,4 +1,4 @@
-# logelei
+# Logelei
 [![Build Status](https://travis-ci.com/PanchoVarallo/Schafkopf-Application.svg?branch=master)](https://travis-ci.com/github/PanchoVarallo/Logelei)
 [![codecov](https://codecov.io/gh/PanchoVarallo/logelei/branch/master/graph/badge.svg)](https://codecov.io/gh/PanchoVarallo/logelei)
 [![Documentation Status](https://readthedocs.org/projects/logelei/badge/?version=latest)](https://logelei.readthedocs.io/en/latest/?badge=latest)
